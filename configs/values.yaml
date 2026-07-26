@@ -5,6 +5,7 @@ global:
   service: 'service'
   env: 'prod'
   base_cluster: 'prod'
+  image: ghcr.io/mccutchen/go-httpbin:latest
 
 vmpodscrape:
   enabled: false
@@ -34,7 +35,6 @@ appDefaults:
 
 deployments:
   - name: app
-    image: ghcr.io/mccutchen/go-httpbin:latest
     command: ['/usr/local/bin/go-httpbin']
     enabled:
       _default: true
