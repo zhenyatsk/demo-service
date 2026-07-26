@@ -1,3 +1,9 @@
+---
+global:
+  team: 'qwe' # should be set in service repository
+  tier: 'T4' # should be set in service repository
+  service: 'service'
+
 deployments:
   - name: app
     command: ['/usr/local/bin/go-httpbin']
