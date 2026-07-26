@@ -34,6 +34,7 @@ appDefaults:
 
 deployments:
   - name: app
+    image: ghcr.io/mccutchen/go-httpbin:latest
     command: ['/usr/local/bin/go-httpbin']
     enabled:
       _default: true
