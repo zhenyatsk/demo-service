@@ -4,6 +4,7 @@ global:
   tier: 'T4' # should be set in service repository
   service: 'service'
   env: 'prod'
+  base_cluster: 'prod'
 
 deployments:
   - name: app
