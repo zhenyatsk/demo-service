@@ -35,11 +35,11 @@ appDefaults:
   livenessProbe:
     httpGet:
       path: /
-      port: http-port
+      port: http-app
   readinessProbe:
     httpGet:
       path: /
-      port: http-port
+      port: http-app
 
 deployments:
   - name: app
