@@ -9,6 +9,8 @@ global:
 vmpodscrape:
   enabled: false
 
+alerts: {}
+
 appDefaults:
   addenv: {}
   replicas:
