@@ -3,6 +3,7 @@ global:
   team: 'qwe' # should be set in service repository
   tier: 'T4' # should be set in service repository
   service: 'service'
+  env: 'prod'
 
 deployments:
   - name: app
