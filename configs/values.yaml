@@ -12,7 +12,7 @@ vmpodscrape:
 appDefaults:
   addenv: {}
   replicas:
-    prod: 3
+    prod: 1
     _default: 1
   resources:
     prod:
