@@ -6,6 +6,9 @@ global:
   env: 'prod'
   base_cluster: 'prod'
 
+vmpodscrape:
+  enabled: false
+
 appDefaults:
   addenv: {}
   replicas:
