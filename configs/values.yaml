@@ -6,6 +6,27 @@ global:
   env: 'prod'
   base_cluster: 'prod'
 
+appDefaults:
+  addenv: {}
+  replicas:
+    prod: 3
+    _default: 1
+  resources:
+    prod:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+      limits:
+        cpu: "1000m"
+        memory: "128Mi"
+    _default:
+      requests:
+        cpu: "150m"
+        memory: "64Mi"
+      limits:
+        cpu: "250m"
+        memory: "64Mi"
+
 deployments:
   - name: app
     command: ['/usr/local/bin/go-httpbin']
