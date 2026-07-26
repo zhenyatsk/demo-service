@@ -1,0 +1,5 @@
+deployments: []
+  - name: app
+    command: ['/usr/local/bin/go-httpbin']
+    enabled:
+      _default: true
